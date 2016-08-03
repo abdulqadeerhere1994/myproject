@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title> Week 1 Assignment</title>
+        <meta name="author" content="Abdul Qadeer">
+        
+<style>
+    
+    
+    
+    fieldset {background: lightyellow; border: 10px solid yellow; margin-bottom: 10px; width: 720px}
+    
+/* We are using this specific type of style, to center the left and right text of inputy type radio */
+  /* ------------------------------- */  
+      fieldset > *{
+    vertical-align: middle;
+}
+  /* ------------------------------- */
+    
+   
+   
+    .wauto {width: auto}
+    
+    textarea {width: 360px; height: 50px}
+    
+/* By default image thumbnail is too big, so to make it small using this style. NOt required for assignment but to make things look good. I'm using it. */    
+    img {width: 100px}
+    
+    
+    label
+    {
+        width: 180px;
+        display: inline-block;
+        text-align: right;
+        vertical-align: top;
+
+}
+
+
+    
+/* Styling for the text left and right of input type radio */
+    
+    .leftlabel{
+    display: inline-block;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+         background-color: red;
+    color: white;
+        outline-color: red;
+        border: 2px solid red;
+}
+
+    .rightlabel{
+        display: inline-block;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+        background-color: purple;
+    color: white;
+        outline-color: purple;
+        border: 2px solid purple;
+        
+    }   
+    
+
+    
+    /* Hover Styling Part3.html */
+    
+    label:hover { font-size:40px }
+    input:hover {font-size: 40px}
+    select:hover { font-size:40px }
+    
+    
+</style>
+        
+    </head>
+    
+<body>
+        
+        <h1><strong>Please Enter Your Details For Our Dating Website!</strong></h1><br>
+    
+    <form method="get" enctype="multipart/form-data" action=" https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+        
+        <fieldset>
+        <legend>Your Face</legend>
+         <label for="image">Choose Face:</label>
+            <input type="file" id="image" name="filetoUpload" required><br><br>
+            <label for="preview">View image:</label>
+           
+        
+        </fieldset>
+        
+        
+        <fieldset>
+            <legend>Your General Details</legend>
+         <label for="name">Name: </label> 
+            <input type="text" id="name" name="name" placeholder="Your full name" required><br>
+            
+            
+            
+        <label for="gender">Gender:</label>
+            
+            <span class="wauto">
+                
+                <input type="radio" id="gender" name="gender" value="Male" required>Male</span>
+            <span class="wauto">
+            <input type="radio" id="gender" name="gender" value="Female" required>Female<br>
+                
+            </span>
+            
+            
+            
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" value="18" min="0" max="99" step="1" required><br>
+            
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="dob"><br>
+            
+            
+            <label for="color">Favourite Color:</label>
+            <input type="color" id="color" name="favColor">
+            <br>
+            <label for="country">Which Country:</label>
+            <select name="country" id="country">
+                <option value="N/A"></option>
+	       <option value="hk">India</option>
+                <option value="pk">Pakistan</option>
+	           <option value="uk">UK</option>
+                <option value="usa">USA</option>
+                <option value="china">China</option>
+                
+</select>
+            
+        </fieldset>
+        
+   <fieldset>
+    <legend>Your Indicators</legend><br>
+      <label for="height" >Height:</label>
+      <span class="leftlabel">Short</span>
+      <input type="range" id="height" name="height" min="0" max="100">
+      <span class="rightlabel">Tall</span>
+      <br>
+      <label for="salary">Salary:</label>
+      <span class="leftlabel">Poor</span>
+      <input type="range" id="salary" name="salary" min="0" max="100">
+      <span class="rightlabel">Rich</span>
+  </fieldset>
+        
+        
+        <fieldset>
+            
+            <legend>Your Contact Information</legend>
+     
+           <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="mobile">Mobile:</label>
+             <input type="tel" id="mobile" name="mobile"><br>
+            
+            <label for="address">Address:</label>
+            <textarea rows="2" cols="20" id="address" name="address"></textarea><br>
+    
+            
+            <label for="contact" class="wauto">Method to contact you:</label>
+            <input type="checkbox" id="contact" name="email">Email
+            
+            <input type="checkbox" id="contact" name="Whatsapp">Whatsapp
+            
+            <input type="checkbox" id="contact" name="inappchat">In-app chat<br>
+            
+            
+        </fieldset>
+        <input type="submit" value="submit">
+        
+    
+    </form>
+    
+    
+    
+</body>
+
+</html>
