@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     
@@ -34,11 +35,7 @@
         display: inline-block;
         text-align: right;
         vertical-align: top;
-
 }
-
-    
-
     
 /* Styling for the text left and right of input type radio */
     
@@ -49,10 +46,7 @@
     text-align: center;
          background-color: red;
     color: white;
-        outline-color: red;
-        border: 2px solid red;
 }
-
     .rightlabel{
         display: inline-block;
     width: 50px;
@@ -60,12 +54,9 @@
     text-align: center;
         background-color: purple;
     color: white;
-        outline-color: purple;
-        border: 2px solid purple;
         
     }   
     
-
     
     /* Hover Styling Part3.html */
     
@@ -82,7 +73,7 @@
         
         <h1><strong>Please Enter Your Details For Our Dating Website!</strong></h1><br>
     
-    <form method="post" enctype="multipart/form-data" action=" https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+    <form method="get" enctype="multipart/form-data" action=" http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
         
         <fieldset>
         <legend>Your Face</legend>
@@ -100,19 +91,9 @@
             <input type="text" id="name" name="name" placeholder="Your full name" required><br>
             
             
-            
         <label for="gender">Gender:</label>
-            
-            <span class="wauto">
-                
-                <input type="radio" id="gender" name="gender" value="Male" required>Male</span>
-            <span class="wauto">
+            <input type="radio" id="gender" name="gender" value="Male" required>Male
             <input type="radio" id="gender" name="gender" value="Female" required>Female<br>
-                
-            </span>
-            
-            
-            
             
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" value="18" min="0" max="99" step="1" required><br>
